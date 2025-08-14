@@ -36,6 +36,7 @@ except AttributeError:
 # ---------- TKINTER SETUP ----------
 root = tk.Tk()
 root.title("Solar System Simulation")
+root.resizable(False, False)
 canvas = tk.Canvas(root, width=WIDTH, height=HEIGHT, bg="black", highlightthickness=0)
 canvas.pack()
 
