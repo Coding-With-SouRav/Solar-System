@@ -35,7 +35,7 @@ except AttributeError:
 
 # ---------- TKINTER SETUP ----------
 root = tk.Tk()
-root.title("Solar System Simulation")
+root.title("Solar System - By Sourav Bhattacharya")
 root.resizable(False, False)
 canvas = tk.Canvas(root, width=WIDTH, height=HEIGHT, bg="black", highlightthickness=0)
 canvas.pack()
@@ -229,7 +229,6 @@ def update():
             canvas.delete("mask")
         else:
             canvas.itemconfig(canvas_sun, state="normal")
-            # ensure mask exists (only one)
             if not canvas.find_withtag("mask"):
                 mask_id = canvas.create_image(CENTER_X, CENTER_Y - SUN_SIZE // 4, 
                                             image=sun_upper_photo, tags="mask", anchor="center")
